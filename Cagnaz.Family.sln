@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{39B83888-B7C7-4106-9DB7-6D60D9B133FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BC98FB27-E4AC-46FA-8CA1-A3E8DCD6CE07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0110AF6D-4D71-42F8-A297-8FA34D728039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cagnaz.Family.Domain", "Core\Cagnaz.Family.Domain\Cagnaz.Family.Domain.csproj", "{E9AD4875-255E-42A4-ADDC-DC2ADA88563F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cagnaz.Family.Application", "Core\Cagnaz.Family.Application\Cagnaz.Family.Application.csproj", "{6C92F39F-CE14-4F1F-B600-B1F845BBF025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cagnaz.Family.Infrastructure", "Infrastructure\Cagnaz.Family.Infrastructure\Cagnaz.Family.Infrastructure.csproj", "{B84C0CCA-4B0C-433A-B4FD-FE8F3A624E7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cagnaz.Family.Persistence", "Infrastructure\Cagnaz.Family.Persistence\Cagnaz.Family.Persistence.csproj", "{D4109270-586A-4105-8F1C-46F67A0172D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cagnaz.Family.WebAPI", "Presentation\Cagnaz.Family.WebAPI\Cagnaz.Family.WebAPI.csproj", "{9CD8141B-7AD8-4DF9-9339-F79A1EC4EEF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9AD4875-255E-42A4-ADDC-DC2ADA88563F} = {39B83888-B7C7-4106-9DB7-6D60D9B133FB}
+		{6C92F39F-CE14-4F1F-B600-B1F845BBF025} = {39B83888-B7C7-4106-9DB7-6D60D9B133FB}
+		{B84C0CCA-4B0C-433A-B4FD-FE8F3A624E7A} = {BC98FB27-E4AC-46FA-8CA1-A3E8DCD6CE07}
+		{D4109270-586A-4105-8F1C-46F67A0172D0} = {BC98FB27-E4AC-46FA-8CA1-A3E8DCD6CE07}
+		{9CD8141B-7AD8-4DF9-9339-F79A1EC4EEF4} = {0110AF6D-4D71-42F8-A297-8FA34D728039}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9AD4875-255E-42A4-ADDC-DC2ADA88563F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9AD4875-255E-42A4-ADDC-DC2ADA88563F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9AD4875-255E-42A4-ADDC-DC2ADA88563F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9AD4875-255E-42A4-ADDC-DC2ADA88563F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C92F39F-CE14-4F1F-B600-B1F845BBF025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C92F39F-CE14-4F1F-B600-B1F845BBF025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C92F39F-CE14-4F1F-B600-B1F845BBF025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C92F39F-CE14-4F1F-B600-B1F845BBF025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84C0CCA-4B0C-433A-B4FD-FE8F3A624E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84C0CCA-4B0C-433A-B4FD-FE8F3A624E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84C0CCA-4B0C-433A-B4FD-FE8F3A624E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84C0CCA-4B0C-433A-B4FD-FE8F3A624E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4109270-586A-4105-8F1C-46F67A0172D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4109270-586A-4105-8F1C-46F67A0172D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4109270-586A-4105-8F1C-46F67A0172D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4109270-586A-4105-8F1C-46F67A0172D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD8141B-7AD8-4DF9-9339-F79A1EC4EEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD8141B-7AD8-4DF9-9339-F79A1EC4EEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD8141B-7AD8-4DF9-9339-F79A1EC4EEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD8141B-7AD8-4DF9-9339-F79A1EC4EEF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
