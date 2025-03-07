@@ -73,7 +73,7 @@ namespace Cagnaz.Family.Persistence.Migrations
                     b.ToTable("FamilyMembers");
                 });
 
-            modelBuilder.Entity("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyListModel", b =>
+            modelBuilder.Entity("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyModel", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -108,13 +108,18 @@ namespace Cagnaz.Family.Persistence.Migrations
 
             modelBuilder.Entity("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyMember", b =>
                 {
-                    b.HasOne("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyListModel", "Family")
-                        .WithMany()
+                    b.HasOne("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyModel", "Family")
+                        .WithMany("Members")
                         .HasForeignKey("FamilyID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Family");
+                });
+
+            modelBuilder.Entity("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyModel", b =>
+                {
+                    b.Navigation("Members");
                 });
 #pragma warning restore 612, 618
         }

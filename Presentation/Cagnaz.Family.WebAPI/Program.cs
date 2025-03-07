@@ -1,7 +1,9 @@
 using AuthService.Registrations;
 using Cagnaz.Family.Infrastructure.Registration;
+using Cagnaz.Family.Infrastructure.Repositorys;
 using ExceptionHandling.filters;
 using ExceptionHandling.Middlewares;
+using MQService.Registrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,7 @@ builder.Services.AddControllers(opt=>opt.Filters.Add<ValidationFilter>());
 builder.Services.AddDatabase(builder.Configuration);
 builder.Services.AddRepositorys();
 builder.Services.AddAuthenticationServices(builder.Configuration["AppSettings:TokenKey"]);
+builder.Services.AddMQService<UnitOfWork>(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

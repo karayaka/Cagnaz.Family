@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cagnaz.Family.Persistence.Migrations
 {
     [DbContext(typeof(MySqlFamilyDataContext))]
-    [Migration("20250128163503_init1")]
-    partial class init1
+    [Migration("20250227160004_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -112,12 +112,17 @@ namespace Cagnaz.Family.Persistence.Migrations
             modelBuilder.Entity("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyMember", b =>
                 {
                     b.HasOne("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyModel", "Family")
-                        .WithMany()
+                        .WithMany("Members")
                         .HasForeignKey("FamilyID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Family");
+                });
+
+            modelBuilder.Entity("Cagnaz.Family.Domain.EntityModels.FamilyModels.FamilyModel", b =>
+                {
+                    b.Navigation("Members");
                 });
 #pragma warning restore 612, 618
         }

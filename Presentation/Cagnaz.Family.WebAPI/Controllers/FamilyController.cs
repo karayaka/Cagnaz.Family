@@ -18,6 +18,10 @@ namespace Cagnaz.Family.WebAPI.Controllers
         {
             _uow = uow;
         }
+        [HttpGet("GetFamilyDashbord")]
+        public async Task<IActionResult>GetFamilyDashbord()=>
+             Ok(new Response<FamilyDasbordModel>(_Data:await _uow.FamilyRepository.GetFamilyDasbordModel(),_Message:"Aile başarıyla eklendi"));
+
         [HttpPost("AddFamily")]
         public async Task<IActionResult> AddFamily(CreateFamilyModel family)=>
             Ok(new Response<Guid>(_Data:await _uow.FamilyRepository.AddFamily(family),_Message:"Aile başarıyla eklendi"));

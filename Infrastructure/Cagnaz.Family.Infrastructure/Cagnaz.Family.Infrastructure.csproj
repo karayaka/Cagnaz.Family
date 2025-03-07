@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="authservice" Version="1.0.2" />
+      <PackageReference Include="authservice" Version="1.0.5" />
       <PackageReference Include="exceptionhandling" Version="1.0.2" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
@@ -23,6 +23,7 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="MQService" Version="1.0.2" />
       <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
       <PackageReference Include="Responder" Version="1.0.0" />
     </ItemGroup>

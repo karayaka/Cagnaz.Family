@@ -9,8 +9,8 @@ public class DesignTimeDbContextFactory:IDesignTimeDbContextFactory<MySqlFamilyD
     {
         var serverVersion = new MySqlServerVersion(new Version(10, 3, 35));
         var builder = new DbContextOptionsBuilder<MySqlFamilyDataContext>();
-        //var connectionString = "server=213.238.183.40;port=3306;database=cagnazco_family_test;user=cagnazco_family_test;password=Kara.531531!";//test
-        var connectionString = "server=213.238.183.40;port=3306;database=cagnazco_family;user=cagnazco_family;password=Kara.531531!";//prod
+        var connectionString = "server=213.238.183.232;port=3306;database=cagnazco_family_test;user=cagnazco_family_test;password=Kara.531531!";//test
+        //var connectionString = "server=213.238.183.232;port=3306;database=cagnazco_family;user=cagnazco_family;password=Kara.531531!";//prod
         builder.UseMySql(
             connectionString,
             serverVersion,

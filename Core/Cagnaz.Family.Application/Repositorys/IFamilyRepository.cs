@@ -47,4 +47,9 @@ public interface IFamilyRepository:IRepository
     /// <param name="model"></param>
     /// <returns></returns>
     Task UpdateFamilyMember(UpdateFamilyMemberModel model);
+    /// <summary>
+    /// sessiondaki kullanıcının aile dasbord bilgilerini döner
+    /// </summary>
+    /// <returns></returns>
+    Task<FamilyDasbordModel?> GetFamilyDasbordModel();
 }
